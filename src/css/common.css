@@ -1,0 +1,161 @@
+@import url("../../node_modules/normalize.css/normalize.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    /* Забирає зайвий простір під зображенням */
+    max-width: 100%;
+    /* Забезпечує адаптивність */
+    height: auto;
+    /* Зберігає пропорції */
+}
+
+/* Скидання стилів списків */
+ul,
+ol {
+    list-style-type: none;
+    /* Прибирає маркери у списках */
+    padding: 0;
+    margin: 0;
+}
+
+/* Скидання стилів посилань */
+a {
+    text-decoration: none;
+    /* Видаляє підкреслення */
+    color: inherit;
+    /* Наслідує колір від батьківського елемента */
+    cursor: pointer;
+}
+
+/* Додаткові покращення */
+li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    text-align: center;
+    color: #000;
+} */
+
+/* .container {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.section {
+    padding-top: 175px;
+    padding-bottom: 175px;
+    min-width: 360px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .accent-color {
+    color: #2C7250;
+}
+
+.accent-color-backdrop {
+    color: #006333;
+} */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.form {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+}
+
+input {
+    background-color: #fff;
+    border: 1.5px solid #808080;
+    border-radius: 4px;
+    padding-left: 8px;
+    width: 272px;
+    height: 40px;
+    outline: transparent;
+}
+
+input:hover {
+    border: 1.5px solid black;
+}
+
+input:focus {
+    border: 1.5px solid #4e75ff;
+}
+
+button {
+    border-radius: 8px;
+    background-color: #4e75ff;
+    padding: 8px 16px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: transparent;
+}
+
+button:hover,
+button:active {
+    background-color: #6c8cff;
+}
